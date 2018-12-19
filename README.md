@@ -61,8 +61,8 @@ void setup() {
 	DebugUtilsInit();
 	DEBUG_PRINT("Debug in same line");
 	DEBUG_PRINTLN(" -- Debug with new line");
-	DEBUG_PRINT2(10, DEC); // Same line
-	DEBUG_PRINTLN2(99, DEC); // New line
+	DEBUG_PRINT(10, DEC); // Same line
+	DEBUG_PRINTLN(99, DEC); // New line
 }
 
 void loop() {
