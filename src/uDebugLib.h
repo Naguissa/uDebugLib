@@ -6,7 +6,7 @@
  * @author Naguissa
  * @email naguissa@foroelectro.net
  * @url https://github.com/Naguissa/uDebugLib
- * @version 1.0.0
+ * @version 1.0.1
  * @created 2018-07-27
  */
 
