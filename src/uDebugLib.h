@@ -36,9 +36,11 @@
 			#define UDEBUGLIB_BAUDS 9600
 		#endif
 		void uDebugLibInitFunction() {
-			UDEBUGLIB_DEV.begin(UDEBUGLIB_BAUDS);
+			UDEBUGLIB_DEV.begin(UDEBUGLIB_BAUDS)
+			while (!UDEBUGLIB_DEV) ; // wait for serial port to connect. Needed for native USB
 		}
 		#define uDebugLibInit() uDebugLibInitFunction()
+		#define DEBUG_PRINTLN() UDEBUGLIB_DEV.println()
 		#define DEBUG_PRINT UDEBUGLIB_DEV.print
 		#define DEBUG_PRINTLN UDEBUGLIB_DEV.println
 	#else
