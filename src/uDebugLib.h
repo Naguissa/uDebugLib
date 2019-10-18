@@ -6,7 +6,7 @@
  * @author Naguissa
  * @email naguissa@foroelectro.net
  * @url https://github.com/Naguissa/uDebugLib
- * @version 1.0.1
+ * @version 1.0.2
  * @created 2018-07-27
  */
 
@@ -40,7 +40,6 @@
 			while (!UDEBUGLIB_DEV) ; // wait for serial port to connect. Needed for native USB
 		}
 		#define uDebugLibInit() uDebugLibInitFunction()
-		#define DEBUG_PRINTLN() UDEBUGLIB_DEV.println()
 		#define DEBUG_PRINT UDEBUGLIB_DEV.print
 		#define DEBUG_PRINTLN UDEBUGLIB_DEV.println
 	#else
